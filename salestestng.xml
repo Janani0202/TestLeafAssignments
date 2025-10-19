@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel='tests' name="SalesforceSuite" verbose="5">
+	<parameter name ="url" value= "https://login.salesforce.com/"></parameter>
+	<parameter name ="username" value= "janani.rmk553@agentforce.com"></parameter>
+	<parameter name ="password" value= "Sales@123"></parameter>	
+  <test thread-count="5" name="LegalEntity">
+    <classes>
+      <class name="week5.day2assignment.AnnotationsTestNg"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
